@@ -1,4 +1,4 @@
-document.getElementById('imgButton').addEventListener('click', imgClick)
+document.getElementById('imgButton').addEventListener('click', imgClick);
 let backDark = true
 count = 0
 var colorArray = ['#FF6633', '#FFB399', '#FF33FF', '#FFFF99', '#00B3E6',
@@ -33,3 +33,4 @@ function imgClick(){
     }
 
 }
+

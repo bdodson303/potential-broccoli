@@ -83,16 +83,22 @@ body {
     padding: 20px;
 }
 #aboutMeTextContainer p,
-#aboutMeTextContainer img{
+#aboutMeTextContainer img,
+#projectsTextContainer p,
+#projectsTextContainer img,
+#projectsTextContainer a{
     margin-left: 50px;
+}
+#projectsTextContainer a{
+    color: blueviolet;
+    font-size: 20px;
 }
 #education #waketech img{
     height: 50px;
     float: left;
 }
-#programmingExperience img{
+#programmingExperience img {
     height: 100px;
-
 }
 #programmingExperience img,
 #programmingExperience p
@@ -111,4 +117,78 @@ body {
 #projectsTextContainer h2{
     color: grey;
 }
+#portfolioImage{
+    width: 750px;
+}
+#portfolioImageDiv{
+    float: left;
+}
+#portfolioImageDiv input{
+    margin-left: 50px;
+}
+#portfolioProject{
+    overflow: hidden;
+}
+#stockProject{
+    overflow: auto;
+}
+#backButton{
+    margin-left: 50px;
+}
+#nextButton{
+    margin-left: 200px;
+}
+#ghAppImgDiv{
+    float: left;
+    padding: 10px;
+}
+#contactMeForm{
+    color: white;
+    padding: 20px;
+
+}
+#contactMeForm input,
+#contactMeForm textarea{
+    margin: 10px;
+}
+#contactMePage{
+    display: inline-block;
+    font-family: "Courier New";
+}
+#handles{
+    color: white;
+    margin: 15px;
+    padding: 15px;
+    width: 49%;
+
+}
+.handleItem{
+    display: flex;
+}
+#handles p{
+    font-size: 30px;
+    margin: 0px;
+    padding: 0px;
+}
+#handles a{
+    text-decoration: none;
+    color: white;
+}
+#handles a:hover{
+    color: blueviolet;
+}
+#contactMeForm{
+    margin: auto;
+    width: 49%;
+    border-right: 1px solid white;
+    text-align: center;
+}
+#contactMeForm h3{
+    font-size: 30px;
+}
+#contactMePage{
+    display: flex;
+}
+
+
 
