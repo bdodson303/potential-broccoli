@@ -11,22 +11,22 @@ body {
 
 
 /*this is the start of the code for the top navigation bar for all of the pages*/
-#topNav {
+.topNav {
     background-color: #2F4550;
     overflow: hidden;
     font-family: "Courier New";
     box-shadow: 10px 5px 5px blueviolet;
     transform: skew(10deg);
 }
-#topNav ul{
+.topNav ul{
     list-style: None;
     margin: 0;
     padding: 0;
 }
-#topNav li{
+.topNav li{
 
 }
-#topNav li a{
+.topNav li a{
     float: left;
     border-right: 1px solid black;
     display: block;
@@ -37,20 +37,19 @@ body {
     text-decoration: none;
     transition: .3s;
 }
-#topNav li img{
+.topNav li img{
     height: 40px;
     padding: 5px 25px;
     float: right;
     border-left: 1px solid black;
 }
-#topNav a:hover{
+.topNav a:hover{
     background-color: #B8DBD9;
 }
 
-#topNav a.active{
+.topNav a.active{
     background-color: dodgerblue;
 }
-
 
 /*Start of the styling for the content of the main page*/
 #Intro{
@@ -67,6 +66,7 @@ body {
     border-radius: 50%;
     padding-right: 20px;
     transition: .3s;
+    animation: myName 2s ease-out 1;
 }
 #Intro #img img:hover{
     border-radius: 45%;
@@ -88,6 +88,30 @@ body {
 }
 .code{
     color: blueviolet;
+    animation: codeBounce 10s linear infinite;
+}
+#pressMe{
+    transition: 500ms;
+}
+/*animation: myName 1s linear infinite;*/
+@keyframes myName{
+    0% {
+        border-radius: 30%;
+    }
+    100% {
+        border-radius: 50%;
+    }
+}
+@keyframes codeBounce{
+    0%{color:blueviolet}
+    15%{}
+    25%{color: deepskyblue}
+    45%{}
+    50%{color:blueviolet}
+    75%{color: deepskyblue}
+    90%{}
+    100%{color:blueviolet}
+
 }
 
 /*styling for the about me page and some for the projects page*/
