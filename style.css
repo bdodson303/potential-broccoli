@@ -5,11 +5,18 @@ body {
     /*background-repeat: no-repeat;*/
     /*background-attachment: fixed;*/
     /*background-size: cover;*/
+    transition: 3s;
 }
+
+
+
+/*this is the start of the code for the top navigation bar for all of the pages*/
 #topNav {
     background-color: #2F4550;
     overflow: hidden;
     font-family: "Courier New";
+    box-shadow: 10px 5px 5px blueviolet;
+    transform: skew(10deg);
 }
 #topNav ul{
     list-style: None;
@@ -28,6 +35,7 @@ body {
     font-size: 18px;
     text-align: center;
     text-decoration: none;
+    transition: .3s;
 }
 #topNav li img{
     height: 40px;
@@ -42,6 +50,9 @@ body {
 #topNav a.active{
     background-color: dodgerblue;
 }
+
+
+/*Start of the styling for the content of the main page*/
 #Intro{
     color: lightgrey;
     font-family: "Courier New";
@@ -51,9 +62,11 @@ body {
     /*grid-gap: 20px;*/
 }
 #Intro #img img{
+    /*This is the image of me on the main page*/
     height: 200px;
     border-radius: 50%;
     padding-right: 20px;
+    transition: .3s;
 }
 #Intro #img img:hover{
     border-radius: 45%;
@@ -76,6 +89,8 @@ body {
 .code{
     color: blueviolet;
 }
+
+/*styling for the about me page and some for the projects page*/
 #aboutMeTextContainer,
 #projectsTextContainer{
     color: white;
@@ -86,7 +101,11 @@ body {
 #aboutMeTextContainer img,
 #projectsTextContainer p,
 #projectsTextContainer img,
-#projectsTextContainer a{
+#projectsTextContainer a,
+#programmingExperience img,
+#programmingExperience p,
+#programmingExperience li{
+    /*These select the elements within the indented code and indent them*/
     margin-left: 50px;
 }
 #projectsTextContainer a{
@@ -99,11 +118,6 @@ body {
 }
 #programmingExperience img {
     height: 100px;
-}
-#programmingExperience img,
-#programmingExperience p
-#programmingExperience li{
-    margin-left: 50px;
 }
 #programmingExperience ul{
     list-style: none;
@@ -142,10 +156,10 @@ body {
     float: left;
     padding: 10px;
 }
+/*Styling for contact me form*/
 #contactMeForm{
     color: white;
     padding: 20px;
-
 }
 #contactMeForm input,
 #contactMeForm textarea{
@@ -155,6 +169,7 @@ body {
     display: inline-block;
     font-family: "Courier New";
 }
+/*Styling for social media links*/
 #handles{
     color: white;
     margin: 15px;
@@ -173,6 +188,7 @@ body {
 #handles a{
     text-decoration: none;
     color: white;
+    transition: .1s;
 }
 #handles a:hover{
     color: blueviolet;
@@ -188,6 +204,14 @@ body {
 }
 #contactMePage{
     display: flex;
+}
+#imageGridContainer{
+    display: inline-block;
+}
+#imageGridContainer img{
+    height: 300px;
+    padding: 10px;
+    margin: 10px;
 }
 
 

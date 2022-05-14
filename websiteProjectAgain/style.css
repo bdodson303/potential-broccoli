@@ -1,0 +1,218 @@
+body {
+    background: black;
+    /*background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,52,1) 42%, rgba(205,0,255,1) 87%);    font-family: Arial;*/
+    /*background-image: url('homeBackground.png');*/
+    /*background-repeat: no-repeat;*/
+    /*background-attachment: fixed;*/
+    /*background-size: cover;*/
+    transition: 3s;
+}
+
+
+
+/*this is the start of the code for the top navigation bar for all of the pages*/
+#topNav {
+    background-color: #2F4550;
+    overflow: hidden;
+    font-family: "Courier New";
+    box-shadow: 10px 5px 5px blueviolet;
+    transform: skew(10deg);
+}
+#topNav ul{
+    list-style: None;
+    margin: 0;
+    padding: 0;
+}
+#topNav li{
+
+}
+#topNav li a{
+    float: left;
+    border-right: 1px solid black;
+    display: block;
+    padding: 14px 16px;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    transition: .3s;
+}
+#topNav li img{
+    height: 40px;
+    padding: 5px 25px;
+    float: right;
+    border-left: 1px solid black;
+}
+#topNav a:hover{
+    background-color: #B8DBD9;
+}
+
+#topNav a.active{
+    background-color: dodgerblue;
+}
+
+
+/*Start of the styling for the content of the main page*/
+#Intro{
+    color: lightgrey;
+    font-family: "Courier New";
+    margin: 150px;
+    display: flex;
+    /*grid-template-columns: 1fr 2.5fr;*/
+    /*grid-gap: 20px;*/
+}
+#Intro #img img{
+    /*This is the image of me on the main page*/
+    height: 200px;
+    border-radius: 50%;
+    padding-right: 20px;
+    transition: .3s;
+}
+#Intro #img img:hover{
+    border-radius: 45%;
+    height: 205px;
+
+}
+#Intro #img p{
+    text-align: center;
+}
+#text{
+    height: 200px;
+}
+#text p,
+#text h3{
+    margin: 0px;
+}
+#text h3{
+    font-size: 25px;
+}
+.code{
+    color: blueviolet;
+}
+
+/*styling for the about me page and some for the projects page*/
+#aboutMeTextContainer,
+#projectsTextContainer{
+    color: white;
+    font-family: "Courier New";
+    padding: 20px;
+}
+#aboutMeTextContainer p,
+#aboutMeTextContainer img,
+#projectsTextContainer p,
+#projectsTextContainer img,
+#projectsTextContainer a,
+#programmingExperience img,
+#programmingExperience p,
+#programmingExperience li{
+    /*These select the elements within the indented code and indent them*/
+    margin-left: 50px;
+}
+#projectsTextContainer a{
+    color: blueviolet;
+    font-size: 20px;
+}
+#education #waketech img{
+    height: 50px;
+    float: left;
+}
+#programmingExperience img {
+    height: 100px;
+}
+#programmingExperience ul{
+    list-style: none;
+}
+#programmingExperience ul li{
+    display: inline;
+}
+#programmingExperience ul li p{
+
+}
+#projectsTextContainer h2{
+    color: grey;
+}
+#portfolioImage{
+    width: 750px;
+}
+#portfolioImageDiv{
+    float: left;
+}
+#portfolioImageDiv input{
+    margin-left: 50px;
+}
+#portfolioProject{
+    overflow: hidden;
+}
+#stockProject{
+    overflow: auto;
+}
+#backButton{
+    margin-left: 50px;
+}
+#nextButton{
+    margin-left: 200px;
+}
+#ghAppImgDiv{
+    float: left;
+    padding: 10px;
+}
+/*Styling for contact me form*/
+#contactMeForm{
+    color: white;
+    padding: 20px;
+}
+#contactMeForm input,
+#contactMeForm textarea{
+    margin: 10px;
+}
+#contactMePage{
+    display: inline-block;
+    font-family: "Courier New";
+}
+/*Styling for social media links*/
+#handles{
+    color: white;
+    margin: 15px;
+    padding: 15px;
+    width: 49%;
+
+}
+.handleItem{
+    display: flex;
+}
+#handles p{
+    font-size: 30px;
+    margin: 0px;
+    padding: 0px;
+}
+#handles a{
+    text-decoration: none;
+    color: white;
+    transition: .1s;
+}
+#handles a:hover{
+    color: blueviolet;
+}
+#contactMeForm{
+    margin: auto;
+    width: 49%;
+    border-right: 1px solid white;
+    text-align: center;
+}
+#contactMeForm h3{
+    font-size: 30px;
+}
+#contactMePage{
+    display: flex;
+}
+#imageGridContainer{
+    display: inline-block;
+}
+#imageGridContainer img{
+    height: 300px;
+    padding: 10px;
+    margin: 10px;
+}
+
+
+

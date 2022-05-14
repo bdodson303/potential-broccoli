@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Benjamin Dodson</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="body">
+<div id="topNav">
+    <ul>
+        <li><a href="main.html">Home</a></li>
+        <li><a href="aboutMe.html">About Me</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contactMe.html" class="active">Contact Me</a></li>
+        <li><img src="imgs/NavBarLogo.png"></li>
+    </ul>
+</div>
+<div id="contactMePage">
+    <div id="contactMeForm">
+        <form action="https://formsubmit.co/cd28ee9e31d6ebb2f76b2e364134798a" method="POST">
+            <h3>Send me a message!</h3>
+            <label for="contactName">Name</label>
+            <input type="text" name="name" id="contactName" required><br>
+            <label for="contactEmail">Email</label>
+            <input type="email" name="email" id="contactEmail" required><br>
+            <textarea name="message" id="contactMessage" rows="5" cols="30"></textarea><br>
+            <button type="submit" id="contactSendButton">Send</button>
+        </form>
+    </div>
+    <div id="handles">
+        <a href="tel:6146004877"><div id="phone" class="handleItem">
+            <ion-icon name="call-outline" size="large"></ion-icon>
+            <p>(614)600-4877</p>
+        </div></a>
+        <a href="mailto:bdodson303@gmail.com"><div id="email" class="handleItem">
+            <ion-icon name="mail-outline" size="large"></ion-icon>
+            <p>bdodson303@gmail.com</p>
+        </div></a>
+        <a href="https://www.instagram.com/bdodson303/" target="_blank"><div id="instagram" class="handleItem">
+            <ion-icon name="logo-instagram" id="insta-logo" size="large"></ion-icon>
+            <p id="insta-username">bdodson303</p>
+        </div></a>
+        <a href="https://github.com/bdodson303" target="_blank"><div id="git" class="handleItem">
+            <ion-icon name="logo-github" size="large"></ion-icon>
+            <p>bdodson303</p>
+        </div></a>
+    </div>
+</div>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
